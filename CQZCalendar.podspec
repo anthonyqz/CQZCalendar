@@ -9,4 +9,5 @@ Pod::Spec.new do |s|
   	s.requires_arc 			= true
 	s.frameworks             	= "Foundation"
 	s.source_files			= 'project/CQZCalendar/*.swift'
+  	s.dependency 'FSCalendar'
 end
