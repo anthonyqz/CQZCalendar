@@ -10,5 +10,6 @@ Pod::Spec.new do |s|
 	s.frameworks             	= 'Foundation'
 	s.source_files			= 'project/CQZCalendar/*.swift'
 	s.resources 			= 'project/CQZCalendar/*.{lproj,xcdatamodeld,xcassets,png,jpeg,jpg,storyboard,xib}'
+	s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '${PODS_ROOT}/CQZCalendar' }
   	s.dependency 'FSCalendar'
 end
