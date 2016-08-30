@@ -7,7 +7,8 @@ Pod::Spec.new do |s|
   	s.source 			= {:git => 'https://github.com/anthonyqz/CQZCalendar', :tag => s.version}
   	s.ios.deployment_target 	= '8.0'
   	s.requires_arc 			= true
-	s.frameworks             	= "Foundation"
+	s.frameworks             	= 'Foundation'
 	s.source_files			= 'project/CQZCalendar/*.swift'
+	s.resources 			= 'project/CQZCalendar/*.{lproj,xcdatamodeld,xcassets,png,jpeg,jpg,storyboard,xib}'
   	s.dependency 'FSCalendar'
 end
